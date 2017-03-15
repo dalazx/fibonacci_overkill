@@ -1,0 +1,54 @@
+ubuntu@ip-10-10-0-87:~$ ab -c 10 -n 100000 http://0.0.0.0:8080/fib/evensum/1000
+This is ApacheBench, Version 2.3 <$Revision: 1706008 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 0.0.0.0 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:
+Server Hostname:        0.0.0.0
+Server Port:            8080
+
+Document Path:          /fib/evensum/1000
+Document Length:        235 bytes
+
+Concurrency Level:      10
+Time taken for tests:   9.756 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      31600000 bytes
+HTML transferred:       23500000 bytes
+Requests per second:    10250.08 [#/sec] (mean)
+Time per request:       0.976 [ms] (mean)
+Time per request:       0.098 [ms] (mean, across all concurrent requests)
+Transfer rate:          3163.11 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       1
+Processing:     0    1   0.2      1       4
+Waiting:        0    1   0.2      1       4
+Total:          0    1   0.2      1       4
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      1
+  95%      1
+  98%      2
+  99%      2
+ 100%      4 (longest request)

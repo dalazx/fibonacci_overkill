@@ -1,0 +1,3 @@
+aiozmq==0.7.1
+japronto==0.1.1
+msgpack-python==0.4.8
